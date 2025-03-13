@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html>
-<head><title>Upload Image</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+</head>
 <body>
-    <h2>Upload an Image for Watermarking</h2>
+    <h2>Upload an Image & Add Watermark</h2>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Generate Watermark</button>
+        <button type="submit">Upload & Apply Watermark</button>
     </form>
 </body>
 </html>
